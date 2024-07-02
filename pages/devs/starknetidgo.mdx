@@ -2,7 +2,7 @@
 
 Starknetid.go is an unofficial Go library to interact with the Starknet ID protocol developed and maintained by [Metacube games](https://github.com/metacube-games). The implementation is inspired by the official Javascript library [Starknetid.js](https://github.com/starknet-id/starknetid.js).
 
-[🔗 View the source code on GitHub](https://github.com/NethermindEth/starknet.go).
+[🔗 View the source code on GitHub](https://github.com/metacube-games/starknetid.go).
 
 ## Getting Started
 
@@ -24,6 +24,7 @@ client, err := rpc.NewProvider(RPC_URL) // github.com/NethermindEth/starknet.go/
 if err != nil {
   panic(err)
 }
+
 ```
 
 2. Create a new Starknet.id provider
@@ -34,6 +35,7 @@ provider, err := provider.NewProvider(client, constants.SN_MAIN, nil)
 if err != nil {
   panic(err)
 }
+
 ```
 
 **Step 3**: Use the provider to interact with the Starknet.id protocol
@@ -47,6 +49,7 @@ if err != nil {
   panic(err)
 }
 println("Address of metacube.stark:", address)
+
 ```
 
 Please refer to the [examples](https://github.com/metacube-games/starknetid.go/blob/main/examples/main.go) for more usage examples.
